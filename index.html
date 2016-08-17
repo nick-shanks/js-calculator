@@ -3,15 +3,10 @@
   <head>
     <title>JS CALCULATOR</title>
     <link rel="stylesheet" href="js-calculator.css">
-    <script src="js-calculator.js"></script>
+
   </head>
   <body>
-    <p> This should show up.</p>
-    <div id="display">
-      <div>
-        Results display will go here
-      </div>
-    </div>
+
     <div class="calculator">
         <div class="button-board">
           <table>
@@ -34,10 +29,10 @@
               <td><button>- </button></td>
             </tr>
             <tr>
-              <td><button>1 </button></td>
+              <td><button id="one">1 </button></td>
               <td><button>2 </button></td>
               <td><button>3 </button></td>
-              <td><button>+ </button></td>
+              <td><button id="add">+ </button></td>
             </tr>
             <tr>
               <td><button>0 </button></td>
@@ -50,7 +45,13 @@
               <td></td>
               <td></td>
             </tr>
+
+            <p id="display">
+              Result
+            </p>
+
         </div>
     </div>
+    <script src="js-calculator.js"></script>
   </body>
 </html>
