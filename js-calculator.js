@@ -1,46 +1,123 @@
 var answer = ""
 
-function oneNum() {
 var one = document.getElementById("one").addEventListener("click", func)
+var two = document.getElementById("two").addEventListener("click", func)
+var three = document.getElementById("three").addEventListener("click", func)
+var four = document.getElementById("four").addEventListener("click", func)
+var five = document.getElementById("five").addEventListener("click", func)
+var six = document.getElementById("six").addEventListener("click", func)
+var seven = document.getElementById("seven").addEventListener("click", func)
+var eight = document.getElementById("eight").addEventListener("click", func)
+var nine = document.getElementById("nine").addEventListener("click", func)
+var zero = document.getElementById("zero").addEventListener("click", func)
+var decimal = document.getElementById("decimal").addEventListener("click", func)
+var add = document.getElementById("add").addEventListener("click", func)
+var subtract = document.getElementById("subtract").addEventListener("click", func)
+var multiply = document.getElementById("multiply").addEventListener("click", func)
+var divide = document.getElementById("divide").addEventListener("click", func)
+var clearAll =  document.getElementById("clear").addEventListener("click", blank)
+
+function oneNum() {
 one = 1
 answer += one
+document.getElementById("display").innerHTML = one
+console.log(document.getElementById("display").innerHTML)
+}
+
+function twoNum() {
+two = 2
+answer += two
+document.getElementById("display").innerHTML = two
+}
+
+function threeNum() {
+three = 3
+answer += three
+document.getElementById("display").innerHTML = three
+}
+
+function fourNum() {
+four = 4
+answer += four
+document.getElementById("display").innerHTML = four
+}
+
+function fiveNum() {
+five = 5
+answer += five
+document.getElementById("display").innerHTML = five
+}
+
+function sixNum() {
+six = 6
+answer += six
+document.getElementById("display").innerHTML = six
+}
+
+function sevenNum() {
+seven = 7
+answer += seven
+document.getElementById("display").innerHTML = seven
+}
+
+function eightNum() {
+eight = 8
+answer += eight
+document.getElementById("display").innerHTML = eight
+}
+
+function nineNum() {
+nine = 9
+answer += nine
+document.getElementById("display").innerHTML = nine
+}
+
+function zeroNum() {
+zero = 0
+answer += zero
+document.getElementById("display").innerHTML = zero
+}
+
+function decimal() {
+decimal = "."
+answer += decimal
+document.getElementById("display").innerHTML = decimal
 }
 
 function addNum() {
-var add = document.getElementById("add").addEventListener("click", func)
 add = "+"
 answer += add
+document.getElementById("display").innerHTML = "+"
+}
+
+function subtractNum() {
+subtract = "-"
+answer += subtract
+document.getElementById("display").innerHTML = "-"
+}
+
+function multiplyNum() {
+multiply = "*"
+answer += multiply
+document.getElementById("display").innerHTML = "*"
+}
+
+function divideNum() {
+divide = "/"
+answer += divide
+document.getElementById("display").innerHTML = "/"
 }
 
 function func() {
   document.getElementById("compute").addEventListener("click", equal)
+  document.getElementById("count").innerHTML = answer
   function equal() {
-    var x = ""
     document.getElementById("display").innerHTML = eval(answer)
-
   }
 }
 
-// var emptyString = ""
-/* emptyString += "1";
-emptyString += "+";
-console.log(emptyString); */
-
-
-
-// function adding() {
-//
-//   document.getElementById("display").innerHTML = add
-//   emptyString += "+"
-// }
-
-/* func();
-adding();
-func();
-console.log(emptyString); */
-
-
-// function addingOne() {
-//
-//   emptyString = one
-// }
+  function blank() {
+    document.getElementById("display").innerHTML = "Let's Calculate!"
+    document.getElementById("count").innerHTML = 0
+    answer = ""
+  }
