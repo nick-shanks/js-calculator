@@ -78,7 +78,7 @@ answer += zero
 document.getElementById("display").innerHTML = zero
 }
 
-function decimal() {
+function decimalNum() {
 decimal = "."
 answer += decimal
 document.getElementById("display").innerHTML = decimal
