@@ -3,7 +3,7 @@
   <head>
     <title>JS CALCULATOR</title>
     <link rel="stylesheet" href="js-calculator.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
   </head>
   <body>
 
@@ -12,15 +12,12 @@
           <table>
             <tr>
               <td><button id="clear">AC</button></td>
-              <td><button></button></td>
-              <td><button id="remainder" onclick="remainder()"></button></td>
-              <td><button id="divide" onclick="divideNum()">/</button></td>
             </tr>
             <tr>
               <td><button id="seven" onclick="sevenNum()">7 </button></td>
               <td><button id="eight" onclick="eightNum()">8 </button></td>
               <td><button id="nine" onclick="nineNum()">9 </button></td>
-              <td><button id="multiply" onclick="multiplyNum()">* </button></td>
+              <td><button id="multiply" onclick="multiplyNum()">x </button></td>
             </tr>
             <tr>
               <td><button id="four" onclick="fourNum()">4 </button></td>
@@ -37,7 +34,7 @@
             <tr>
               <td><button id="zero" onclick="zeroNum()">0 </button></td>
               <td><button id="decimal" onclick="decimalNum()">. </button></td>
-              <td><button> </button></td>
+                <td><button id="divide" onclick="divideNum()">&divide;</button></td>
               <td><button id="compute">= </button></td>
             </tr>
             <tr>
@@ -45,10 +42,12 @@
               <td></td>
               <td></td>
             </tr>
+            <div class="mathview">
+              <p id="display">
+              0</p>
+              <p id="count">0</p>
+            </div>
 
-            <p id="display">
-            Let's Calculate!</p>
-            <p id="count">0</p>
           </table>
 
         </div>

@@ -1,4 +1,49 @@
-html, body {
-  height: 100%;
-  font-family: 'Open Sans', sans-serif
+body {
+    font-family: 'Russo One', sans-serif;
+    margin-top: 50px;
+}
+.calculator {
+    display: block;
+    margin: auto;
+    border: 5px solid black;
+    width: 240px;
+    padding: 10px;
+    background-color: #0c9e1e;
+    border-radius: 30px;
+    -webkit-box-shadow: 10px 10px 32px 6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 32px 6px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 32px 6px rgba(0, 0, 0, 0.75);
+}
+button {
+    width: 5em;
+    height: 4em;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.button-board {
+    display: block;
+    margin: auto;
+}
+.mathview {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+    border: 2px solid black;
+    display: block;
+    margin: 3px;
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+#display {
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#count {
+    font-size: 10px;
+    font-family: 'Orbitron', sans-serif;
+    color: grey;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }

@@ -15,109 +15,110 @@ var add = document.getElementById("add").addEventListener("click", func)
 var subtract = document.getElementById("subtract").addEventListener("click", func)
 var multiply = document.getElementById("multiply").addEventListener("click", func)
 var divide = document.getElementById("divide").addEventListener("click", func)
-var clearAll =  document.getElementById("clear").addEventListener("click", blank)
+var clearAll = document.getElementById("clear").addEventListener("click", blank)
 
 function oneNum() {
-one = 1
-answer += one
-document.getElementById("display").innerHTML = one
-console.log(document.getElementById("display").innerHTML)
+    one = 1
+    answer += one
+    document.getElementById("display").innerHTML = one
+    console.log(document.getElementById("display").innerHTML)
 }
 
 function twoNum() {
-two = 2
-answer += two
-document.getElementById("display").innerHTML = two
+    two = 2
+    answer += two
+    document.getElementById("display").innerHTML = two
 }
 
 function threeNum() {
-three = 3
-answer += three
-document.getElementById("display").innerHTML = three
+    three = 3
+    answer += three
+    document.getElementById("display").innerHTML = three
 }
 
 function fourNum() {
-four = 4
-answer += four
-document.getElementById("display").innerHTML = four
+    four = 4
+    answer += four
+    document.getElementById("display").innerHTML = four
 }
 
 function fiveNum() {
-five = 5
-answer += five
-document.getElementById("display").innerHTML = five
+    five = 5
+    answer += five
+    document.getElementById("display").innerHTML = five
 }
 
 function sixNum() {
-six = 6
-answer += six
-document.getElementById("display").innerHTML = six
+    six = 6
+    answer += six
+    document.getElementById("display").innerHTML = six
 }
 
 function sevenNum() {
-seven = 7
-answer += seven
-document.getElementById("display").innerHTML = seven
+    seven = 7
+    answer += seven
+    document.getElementById("display").innerHTML = seven
 }
 
 function eightNum() {
-eight = 8
-answer += eight
-document.getElementById("display").innerHTML = eight
+    eight = 8
+    answer += eight
+    document.getElementById("display").innerHTML = eight
 }
 
 function nineNum() {
-nine = 9
-answer += nine
-document.getElementById("display").innerHTML = nine
+    nine = 9
+    answer += nine
+    document.getElementById("display").innerHTML = nine
 }
 
 function zeroNum() {
-zero = 0
-answer += zero
-document.getElementById("display").innerHTML = zero
+    zero = 0
+    answer += zero
+    document.getElementById("display").innerHTML = zero
 }
 
 function decimalNum() {
-decimal = "."
-answer += decimal
-document.getElementById("display").innerHTML = decimal
+    decimal = "."
+    answer += decimal
+    document.getElementById("display").innerHTML = decimal
 }
 
 function addNum() {
-add = "+"
-answer += add
-document.getElementById("display").innerHTML = "+"
+    add = "+"
+    answer += add
+    document.getElementById("display").innerHTML = "+"
 }
 
 function subtractNum() {
-subtract = "-"
-answer += subtract
-document.getElementById("display").innerHTML = "-"
+    subtract = "-"
+    answer += subtract
+    document.getElementById("display").innerHTML = "-"
 }
 
 function multiplyNum() {
-multiply = "*"
-answer += multiply
-document.getElementById("display").innerHTML = "*"
+    multiply = "*"
+    answer += multiply
+    document.getElementById("display").innerHTML = "*"
 }
 
 function divideNum() {
-divide = "/"
-answer += divide
-document.getElementById("display").innerHTML = "/"
+    divide = "/"
+    answer += divide
+    document.getElementById("display").innerHTML = "/"
 }
 
 function func() {
-  document.getElementById("compute").addEventListener("click", equal)
-  document.getElementById("count").innerHTML = answer
-  function equal() {
-    document.getElementById("display").innerHTML = eval(answer)
-  }
+    document.getElementById("compute").addEventListener("click", equal)
+    document.getElementById("count").innerHTML = answer
+
+    function equal() {
+        document.getElementById("display").innerHTML = eval(answer)
+    }
 }
 
-  function blank() {
-    document.getElementById("display").innerHTML = "Let's Calculate!"
+function blank() {
+    document.getElementById("display").innerHTML = "0"
     document.getElementById("count").innerHTML = 0
     answer = ""
-  }
+}
